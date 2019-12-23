@@ -19,7 +19,7 @@ I used Symfony 4 with MAMP in my project.
 ***The Second Problem :*** after i deloy my project in heroku i have this problem when i want to register new user or Connexion the user , i tried solve it but i didn't found the solution
 ![GitHub Logo](blogsymfony/image/error.png)
 
-for this reason i made two version 
+***For this reason i made two version***
 1- The first version with security , this is the link :
 
 2- The second version without security (So you can see the other part of the project ) , this is the link :
