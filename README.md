@@ -25,7 +25,7 @@ I used Symfony 4 with MAMP in my project.
 ***The First Problem :*** I find in my project a big problem to integrate FOSUserBundle because he want to change the version of twing, form ..etc. to old version and I think this is not the goal of this project . because of this I used anther thing for security , for more information you can see the code.
 
 ***The Second Problem :*** after i deloy my project in heroku i have this problem when i want to register new user or Connexion the user , i tried solve it but i didn't found the solution
-![GitHub Logo](blogsymfony/image/error.png)
+![GitHub Logo](https://github.com/shaqura/blogsymfony/blob/master/image/error.png)
 
 ***For this reason i made two version***
 
