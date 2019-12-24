@@ -29,7 +29,7 @@ I used Symfony 4 with MAMP in my project.
 
 ![GitHub Logo](https://github.com/shaqura/blogsymfony/blob/master/image/error.png)
 
-***For this reason i made two version***
+***For this reason i made two versions***
 
 1- The first version with security , this is the link : https://securityblogsymfony.herokuapp.com/
 
