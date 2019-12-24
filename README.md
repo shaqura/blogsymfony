@@ -30,6 +30,6 @@ I used Symfony 4 with MAMP in my project.
 
 ***For this reason i made two version***
 
-1- The first version with security , this is the link :
+1- The first version with security , this is the link : https://securityblogsymfony.herokuapp.com/
 
-2- The second version without security (So you can see the other part of the project ) , this is the link :
+2- The second version without security (So you can see the other part of the project ) , this is the link : https://blogsymfony.herokuapp.com/
