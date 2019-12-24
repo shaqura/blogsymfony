@@ -1,0 +1,21 @@
+{% extends 'base.html.twig'%}
+
+{% block title 'Tous commente'%}
+{% block body%}
+
+<section class="articles">
+{% for article in articles %}
+	<article>
+		<h4> {{ article.title }} </h4>
+		<div class="metadata"> Ecrit le {{ article.createdAt | date('d/m/Y')}} a {{ article.createdAt | date('H:i')}} </div>
+		<div class="centent">
+			<img src="{{ article.image }}" alt="" height=30% width= 30%>
+			
+				 <a class="nav-link active" href="{{path('blog_show', {id: article.id})}}">lire la suite</a>
+			
+		</div>	
+	</article>
+	{% endfor %}
+</section>
+
+{% endblock%}

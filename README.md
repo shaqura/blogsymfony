@@ -1,5 +1,4 @@
 
-
 # Blogsymfony
 I used Symfony 4 with MAMP in my project.
 

@@ -1,0 +1,74 @@
+
+{% extends 'base.html.twig' %}
+{% block body %}
+
+  <article>
+	<h2> {{ article.title }} </h2>
+	<div class="metadata"> Ecrit le {{ article.createdAt | date('d/m/Y')}} a {{ article.createdAt | date('H:i')}} </div>
+	<div class="centent">
+	<p style="text-align:center;">
+	     <img src="{{ article.image }}" alt="" height="342" width= 50%>
+	</p>
+	<br />
+    <br />
+			
+	<p> {{ article.content }}</p> 
+			
+				 <a class="nav-link active" href="{{path('blog_edit', {id: article.id})}}">Modifier</a>	
+ 				 
+				 <a class="nav-link active" href="{{path('blog_delete', {id: article.id})}}">Delete</a>		
+				 
+		
+	 </div>	
+  </article>
+  <br />
+  <br />
+  
+   <p style="text-align:center;">
+	   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbBAet9W6sUMS-EUT1_9dQe4nuEou-91HN-kTLs4DqANvnrOTr&s" alt="" height="30" width= 100%>
+   </p>
+
+  <h4> The Comments :  </h4>
+	<br />
+    <br />	
+  <section id="commentaires">
+	{% for comment in article.comments %}
+  <div class="comment">
+		<div class="row">
+			<div class="col">
+				{{comment.author}} (<small>{{comment.createdAt | date('d/m/Y a H:i')}}</small>)
+			</div>
+			<div class="col">
+				{{comment.content| raw}}
+			</div>
+				
+			<div class="col">
+				 <a class="nav-link active" href="{{path('comment_delete', {id: comment.id})}}">Delete</a>	
+				 	
+				 <a class="nav-link active" href="{{path('comment_edit', {id: comment.id})}}">Edit</a>	
+			</div>
+			  
+		</div>
+	</div>
+ {% endfor %}
+ </section>
+ 
+  <br />
+  <p style="text-align:center;">
+	  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbBAet9W6sUMS-EUT1_9dQe4nuEou-91HN-kTLs4DqANvnrOTr&s" alt="" height="30" width= 100%>
+  </p>
+  
+  		
+       {{ form_start(formComment) }}
+       {{ form_widget(formComment) }}
+  
+	   <button type="submit" class="btn btn-success"> 
+			 Add Comment
+	   </button>
+
+		{{ form_end(formComment) }}
+  
+    <br /><br />
+ 
+ 
+ {% endblock %}
