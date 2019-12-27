@@ -34,3 +34,6 @@ I used Symfony 4 with MAMP in my project.
 1- The first version with security , this is the link :  https://securityblogsymfony.herokuapp.com/
 
 2- The second version without security (So you can see the other part of the project ) , this is the link : https://blogsymfony.herokuapp.com/
+
+
+***The Third problem :*** My computer has been Breakdown from a time. For this reason, I am limited to university time to work on the project.
